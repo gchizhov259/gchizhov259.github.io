@@ -1,0 +1,36 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+    // font-size: 18px;
+    // font-family: "AlegreyaSans";
+    // color: rgb(255, 255, 255);
+    // line-height: 1.667;
+    // text-align: right;
+    // position: absolute;
+    // left: 176.844px;
+    // top: 57.869px;
+    // z-index: 407;
+  
+}
+
+.nav__item {
+  display: flex;
+  // align-items: center;
+  margin-right: 30px;
+}
+
+// :after {
+//   content: "";
+//   width: 4px;
+//   height: 4px;
+//   background-color: $white;
+//   background-repeat: 50%;
+//   display: block;
+//   margin-left: 5px;
+// }
+
+.nav__link {
+  text-decoration: none;
+  color: $white;
+  font-size: 19px;
+}

@@ -1,0 +1,26 @@
+//colors
+$green: #0f5a47;
+$gray: #f2f5f4;
+$dark-gray: #666666;
+$light-gray: #f8faf9;
+$black: #0d0d0d;
+$white: #fff;
+
+$z-fixed-menu: 100;
+
+//normalize
+@import "_misc/normalize.scss";
+
+// setups
+@import "_misc/mixins";
+@import "_misc/fonts";
+@import "_misc/layout";
+
+// blocks
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/promo";
+@import "blocks/reviews";
+@import "blocks/fixed-menu";
+@import "blocks/why";

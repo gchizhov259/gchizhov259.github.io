@@ -1,0 +1,141 @@
+.promo {
+  background: url("../../img/bg/main-section_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  // position: absolute;
+  padding: 1.2rem 3.5rem;
+  color: $white;
+  // z-index: 1;
+}
+
+.promo__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__order {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+
+.promo__title {
+  @include alegreya(bold);
+  font-size: 60px;
+  color: $white;
+  text-align: left;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.15em;
+  // line-height: 1;
+  // text-transform: uppercase;
+}
+
+.promo__desc {
+  @include alegreya();
+  font-size: 1.1rem;
+  line-height: 1.1em;
+  max-width: 17em;
+  margin-bottom: 1.5rem;
+}
+
+.promo__advantages {
+  max-width: 26rem;
+  position: relative;
+}
+
+.advantages__list {
+  display: flex;
+  // flex-direction: row;
+  margin-top: 40px;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 2.4rem;
+}
+
+.advantages__desc {
+  max-width: 4rem;
+  margin-left: 10px;
+  line-height: 0.9rem;
+}
+
+  .bars-top {
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -3%);
+  top: 10%;
+  left: 50%;
+  width: inherit;
+  max-width: 95%;
+  max-height: 102%;
+  }
+
+  // .berries-1 {
+  //   // position: absolute;
+  //   left: 623px;
+  //   top: 405px;
+  //   width: 220px;
+  //   height: 208px;
+  //   z-index: 383;
+  // }
+  
+  // .berry-2 {
+  //   // position: absolute;
+  //   left: 900px;
+  //   top: 589px;
+  //   width: 111px;
+  //   height: 108px;
+  //   z-index: 382;
+  // }
+
+  // .leaf-1 {
+  //   // position: absolute;
+  //   left: 847px;
+  //   top: 356px;
+  //   width: 236px;
+  //   height: 203px;
+  //   z-index: 381;
+  // }
+
+  // .leaf-2 {
+  //   // position: absolute;
+  //   left: 669px;
+  //   top: 575px;
+  //   width: 141px;
+  //   height: 105px;
+  //   z-index: 380;
+  // }
+
+  // .leaf-3 {
+  //   // position: absolute;
+  //   left: 30px;
+  //   top: 589px;
+  //   width: 59px;
+  //   height: 112px;
+  //   z-index: 379;
+  // }
+
+  // .icon_adv-1 {
+  //   width: 44px;
+  //   height: 41px;
+  //   z-index: 396;
+  // }
+
+  // .icon_adv-2 {
+  //   width: 44px;
+  //   height: 41px;
+  //   z-index: 396;
+  // }
+  
+  // .icon_adv-3 {
+  //   width: 44px;
+  //   height: 41px;
+  //   z-index: 396;
+  // }

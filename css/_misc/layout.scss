@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  @include alegreya();
+}
+
+// .wrapper {
+//   background: url("../../img/content/main-section_bars.png");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: center 2.5rem;
+//   position: relative;
+// z-index: 100;
+// width: 100%;
+// min-width: 940px + 20px;
+// min-height: 100%;
+// overflow: hidden;
+// }
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  @include alegreya(bold);
+  font-size: 48px;
+  color: $black;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+  // &--color {
+  //   &--black {
+  //     color: $black;
+  //   }
+
+  //   &--white {
+  //     color: $white;
+  //   }
+  // }
+
+  // &--centered {
+  //   text-align: center;
+  // }
+}
+
+// tag styles reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    list-style: none;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
