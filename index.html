@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная страница CHOCCo</title>
+  <title>CHOCCo</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -53,7 +53,9 @@
 
 
     <div class="container promo__container">
-      <img class="bars-top" src="./img/content/main-section_pics.png" alt="Фото батончиков"/>
+      <div class="promo__main-image">
+        <img src="./img/content/main-section_bars.png" alt="" />
+      </div>
       <div class="promo__order">
         <h1 class="title promo__title">
           Натуральные шоколадные батончики
@@ -67,25 +69,25 @@
       <div class="promo__advantages">
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="./img/icons/ico_natural.png" alt="">
-            </div>
+            <svg class="advantages__icon" style="stroke: #b0f7ff">
+              <use xlink:href="./img/svg/sprite.svg#5"></use>
+            </svg>
             <div class="advantages__desc">
               100% натуральный продукт
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="./img/icons/ico_delivery.png" alt="">
-            </div>
+            <svg class="advantages__icon" style="stroke: #b0f7ff">
+              <use xlink:href="./img/svg/sprite.svg#6"></use>
+            </svg>
             <div class="advantages__desc">
               3-5 дней доставка по РФ
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantages__icon">
-              <img src="./img/icons/ico_figure.png" alt="">
-            </div>
+            <svg class="advantages__icon" style="stroke: #b0f7ff">
+              <use xlink:href="./img/svg/sprite.svg#4"></use>
+            </svg>
             <div class="advantages__desc">
               Не портит фигуру
             </div>
@@ -96,120 +98,192 @@
   </section>
 
   <section class="section why">
-      <div class="container why__container">
-        <img
-          class="why-raspberries-pic"
-          src="./img/content/raspberries.png"
-          alt=""
-        />
-        <div class="why__title">
-          <h2 class="title">
-            Почему Chocco?
-          </h2>
-          <h3 class="why__title-desc">
-            В нашем мире все происходит очень быстро, поэтому мы<br />
-            делаем батончики, которые удобно взять с собой.
-          </h3>
-        </div>
-        <div class="why__items">
-          <ul class="why__item-list">
-            <li class="why__item">
-              <div class="why__item-ico_useful"></div>
-              <div class="why__item-desc">
-                <div class="why__item-desc__title">
-                  Полезно
-                </div>
-                <div class="why__item-desc__text">
-                  Натуральность - ключевое слово нашей продукции. Мы используем
-                  только природные ингридиенты.
-                </div>
-              </div>
-            </li>
-            <li class="why__item">
-              <div class="why__item-ico_delicious"></div>
-              <div class="why__item-desc">
-                <div class="why__item-desc__title">
-                  Вкусно
-                </div>
-                <div class="why__item-desc__text">
-                  Нежный, ненавязчивый, изысканный - так клиенты описывают
-                  вкусовые качества наших батончиков.
-                </div>
-              </div>
-            </li>
-            <li class="why__item">
-              <div class="why__item-ico_nutritious"></div>
-              <div class="why__item-desc">
-                <div class="why__item-desc__title">
-                  Питательно
-                </div>
-                <div class="why__item-desc__text">
-                  Высокое содержание качественного белка, а также всех
-                  необходимых витаминов и минералов.
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="container why__container">
 
-    <section class="section reviews">
-      <div class="container reviews__container">
+      <div class="why__title">
         <h2 class="title">
-          Отзывы
+          Почему Chocco?
         </h2>
-        <div class="reviews__main">
-          <div class="reviews__author">
-            <img
-              class="reviews__photo"
-              src="./img/content/ava_alena.png"
-              alt="Алёна Хмельницкая"
-            />
-            <div class="reviews__desc">
-              <div class="reviews__desc-title">
-                Лучший перекус
+        <h3 class="why__title-desc">
+          В нашем мире все происходит очень быстро, поэтому мы<br />
+          делаем батончики, которые удобно взять с собой.
+        </h3>
+      </div>
+      <div class="why__items">
+        <ul class="why__item-list">
+          <li class="why__item">
+            <div class="why__item-ico_useful"></div>
+            <div class="why__item-desc">
+              <div class="why__item-desc__title">
+                Полезно
               </div>
-              <div class="reviews__desc-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                cum maiores quibusdam a enim tempore ipsam consequatur
-                asperiores, dolores impedit nulla iusto aperiam laudantium alias
-                blanditiis illo. Nemo, dignissimos. Quae?
-              </div>
-              <div class="reviews__desc-author-name">
-                Алёна Хмельницкая
+              <div class="why__item-desc__text">
+                Натуральность - ключевое слово нашей продукции. Мы используем
+                только природные ингридиенты.
               </div>
             </div>
-          </div>
-          <ul class="reviews__author-switch">
-            <li class="reviews__author-switch-item--active">
-              <img
-                class="reviews__author-switch-pic"
-                src="./img/content/ava_alena.png"
-                alt="Алена Хмельницкая"
-              />
-            </li>
-            <li class="reviews__author-switch-item">
-              <img
-                class="reviews__author-switch-pic"
-                src="./img/content/ava_maria.png"
-                alt="Мария Орлова"
-              />
-            </li>
-            <li class="reviews__author-switch-item">
-              <img
-                class="reviews__author-switch-pic"
-                src="./img/content/ava_vadim.png"
-                alt="Вадим Грачёв"
-              />
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="why__item">
+            <div class="why__item-ico_delicious"></div>
+            <div class="why__item-desc">
+              <div class="why__item-desc__title">
+                Вкусно
+              </div>
+              <div class="why__item-desc__text">
+                Нежный, ненавязчивый, изысканный - так клиенты описывают
+                вкусовые качества наших батончиков.
+              </div>
+            </div>
+          </li>
+          <li class="why__item">
+            <div class="why__item-ico_nutritious"></div>
+            <div class="why__item-desc">
+              <div class="why__item-desc__title">
+                Питательно
+              </div>
+              <div class="why__item-desc__text">
+                Высокое содержание качественного белка, а также всех
+                необходимых витаминов и минералов.
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section>
-    <!-- </div> -->
+    </div>
+  </section>
 
-    <!-- <div class="pagination">
+  <section class="section team">
+    <div class="container team__container">
+      <div class="team__title">
+        <h2 class="title">
+          Команда
+        </h2>
+      </div>
+      <div class="team__items">
+        <ul class="team__items-list">
+          <li class="team__item">
+            <div class="team__item__wrapper">
+              <div class="team__item-ava">
+                <div class="team__item-ava__photo"
+                  style="background-image: url('./img/content/team-section_boris.jpg');">
+                </div>
+              </div>
+              <div class="team__item__wrapper-name">
+                <a class="team__item-name" href="#">Борис Федорович</a>
+                <div class="team__item-triangle"></div>
+              </div>
+              <div class="team__item__desc">
+                <div class="team__item__desc-position">Главный технолог</div>
+                <div class="team__item__desc-ability">
+                  Отвечает за вкусовые качества и калорийность.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__item__wrapper">
+              <div class="team__item-ava">
+                <div class="team__item-ava__photo" style="background-image: url('./img/content/team-section_alla.jpg')">
+                </div>
+              </div>
+              <div class="team__item__wrapper-name">
+                <a class="team__item-name" href="#">Алла Иванова</a>
+                <div class="team__item-triangle"></div>
+              </div>
+              <div class="team__item__desc">
+                <div class="team__item__desc-position">
+                  Специалист по упаковке
+                </div>
+                <div class="team__item__desc-ability">
+                  Автор запоминающегося стиля наших батончиков.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item team__item--active">
+            <div class="team__item__wrapper">
+              <div class="team__item-ava">
+                <div class="team__item-ava__photo"
+                  style="background-image: url('./img/content/team-section_kirill.jpg')">
+                </div>
+              </div>
+              <div class="team__item__wrapper-name">
+                <a class="team__item-name" href="#">Кирилл Матросов</a>
+                <div class="team__item-triangle"></div>
+              </div>
+              <div class="team__item__desc">
+                <div class="team__item__desc-position">Оператор</div>
+                <div class="team__item__desc-ability">
+                  С радостью поможет подобрать батончики и оформить заказ.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item ">
+            <div class="team__item__wrapper">
+              <div class="team__item-ava">
+                <div class="team__item-ava__photo" style="background-image: url('./img/content/team-section_mila.jpg')">
+                </div>
+              </div>
+              <div class="team__item__wrapper-name">
+                <a class="team__item-name" href="#">Мила Рыжкова</a>
+                <div class="team__item-triangle"></div>
+              </div>
+              <div class="team__item__desc">
+                <div class="team__item__desc-position">PR, маркетинг</div>
+                <div class="team__item__desc-ability">
+                  По всем вопросам сотрудничества и рекламы писать только
+                  Миле.
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section reviews">
+    <div class="container reviews__container">
+      <h2 class="title">
+        Отзывы
+      </h2>
+      <div class="reviews__main">
+        <div class="reviews__author">
+          <img class="reviews__photo" src="./img/content/ava_alena.png" alt="Алёна Хмельницкая" />
+          <div class="reviews__desc">
+            <div class="reviews__desc-title">
+              Лучший перекус
+            </div>
+            <div class="reviews__desc-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              cum maiores quibusdam a enim tempore ipsam consequatur
+              asperiores, dolores impedit nulla iusto aperiam laudantium alias
+              blanditiis illo. Nemo, dignissimos. Quae?
+            </div>
+            <div class="reviews__desc-author-name">
+              Алёна Хмельницкая
+            </div>
+          </div>
+        </div>
+        <ul class="reviews__author-switch">
+          <li class="reviews__author-switch-item--active">
+            <img class="reviews__author-switch-pic" src="./img/content/ava_alena.png" alt="Алена Хмельницкая" />
+          </li>
+          <li class="reviews__author-switch-item">
+            <img class="reviews__author-switch-pic" src="./img/content/ava_maria.png" alt="Мария Орлова" />
+          </li>
+          <li class="reviews__author-switch-item">
+            <img class="reviews__author-switch-pic" src="./img/content/ava_vadim.png" alt="Вадим Грачёв" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- </div> -->
+
+  <!-- <div class="pagination">
       <div class="pagination__pager">
         <ul class="pagination__list">
           <li class="pagination__item">
@@ -242,31 +316,32 @@
         </ul>
       </div>
     </div> -->
-    <ul class="fixed-menu">
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-      <li class="fixed-menu__item">
-        <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
-      </li>
-    </ul>
-  </body>
+  <ul class="fixed-menu">
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+  </ul>
+</body>
+
 </html>
