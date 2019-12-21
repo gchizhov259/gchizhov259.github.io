@@ -1,9 +1,15 @@
 .header {
-  display: flex;
-  position: relative;
-  margin-bottom: 4.4rem;
+  position: absolute;
+  display: block;
+  width: 980px;
+  margin-top: 0.42rem;
   // width: 100%;
   // padding-top: 12px;
+  top: rem(12px);
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  min-height: 100%;
   z-index: 100;
 }
 
@@ -11,6 +17,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 940px;
+  margin-left: 26px;
 }
 
 .header__wrapper {
@@ -29,7 +37,7 @@ address {
 }
 
 .phone__number {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-family: "alegreya-sans";
     position: relative;
     text-transform: uppercase;

@@ -14,9 +14,10 @@
 }
 
 .nav__item {
-  display: flex;
+  margin-right: 1.2rem;
+  // display: flex;
   // align-items: center;
-  margin-right: 30px;
+  // margin-right: 30px;
 }
 
 // :after {
@@ -32,5 +33,5 @@
 .nav__link {
   text-decoration: none;
   color: $white;
-  font-size: 19px;
+  font-size: 0.93rem;
 }

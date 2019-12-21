@@ -1,9 +1,11 @@
 //colors
 $green: #0f5a47;
+$green-triangle: #2f7060;
+$light-gray: #f8faf9;
 $gray: #f2f5f4;
 $dark-gray: #666666;
-$light-gray: #f8faf9;
 $black: #0d0d0d;
+$black-team: #323232;
 $white: #fff;
 
 $z-fixed-menu: 100;
@@ -15,6 +17,7 @@ $z-fixed-menu: 100;
 @import "_misc/mixins";
 @import "_misc/fonts";
 @import "_misc/layout";
+@import "_misc/media";
 
 // blocks
 @import "blocks/header";
@@ -24,3 +27,5 @@ $z-fixed-menu: 100;
 @import "blocks/reviews";
 @import "blocks/fixed-menu";
 @import "blocks/why";
+@import "blocks/team";
+@import "blocks/menu";

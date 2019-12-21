@@ -1,0 +1,112 @@
+.team {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/team_section_blueberries.png),
+      url(../../img/bg/team-section_bg.png);
+    background-repeat: no-repeat;
+    background-position: top 105px right 14px, top right;
+    transform: translate(0, -144px);
+    z-index: -100;
+  }
+}
+
+.team__container {
+  @include flexColumn;
+  padding-left: 0.7rem;
+  padding-right: 1.4rem;
+}
+
+.team__title {
+  margin-top: -20.8rem;
+  margin-bottom: 2.3rem;
+}
+
+.team__items-list {
+  display: flex;
+  justify-content: space-between;
+  // position: relative;
+}
+
+.team__item {
+  @include flexColumn;
+  width: rem(220px);
+  // position: absolute;
+
+  &-ava {
+    margin-bottom: 0.8rem;
+  }
+
+  &-name {
+    text-align: center;
+    margin-bottom: 0.2rem;
+    text-decoration: none;
+    color: $black-team;
+    @include alegreya(medium);
+    font-size: rem(21px);
+    padding-right: 1rem;
+    position: relative;
+  }
+
+  &-triangle {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 4.5px solid transparent;
+      border-right: 4.5px solid transparent;
+      border-bottom: 6px solid $green-triangle;
+      transform: translate(-14px, 12px) rotate(0deg);
+    }
+  }
+
+  &--active {
+    .team__item__desc {
+      height: auto;
+    }
+
+    .team__item-triangle {
+      &::before {
+        transform: translate(-14px, 12px) rotate(180deg);
+      }
+    }
+  }
+}
+
+.team__item__wrapper-name {
+  display: flex;
+  justify-content: center;
+}
+
+.team__item-ava__photo {
+  max-width: rem(220px);
+  height: rem(290px);
+  @include cover;
+}
+
+.team__item__desc {
+  align-items: center;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+
+  &-position {
+    font-size: rem(18px);
+  }
+
+  &-ability {
+    @include alegreya(light);
+    font-size: rem(17.5px);
+    line-height: 1rem;
+  }
+}
+
+.team__item__wrapper {
+  position: absolute; //абсолютное позиционирование по ТЗ
+  width: inherit;
+}

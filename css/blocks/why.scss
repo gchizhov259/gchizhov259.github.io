@@ -1,26 +1,35 @@
 .why {
-  background: url("../../img/bg/best_leaf.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left center;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/why-section_raspberries.png),
+      url(../../img/bg/why-section_bg-leaf.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, top 25% left;
+    transform: translate(0, 112px);
+    z-index: -100;
+  }
 }
 
 .why__container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 7rem;
+  @include flexColumn;
+  // padding-top: 4.5rem;
 }
 
 .why__title {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
   align-items: center;
+  margin-bottom: 2.6rem;
 }
 
 .why__title-desc {
   text-align: center;
   @include alegreya(regular);
-  font-size: 18px;
+  font-size: 0.9rem;
+  line-height: 1.3em;
   color: $dark-gray;
 }
 
@@ -31,10 +40,22 @@
 
 .why__item,
 .why__item-desc {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
   align-items: center;
   text-align: center;
+}
+
+.why__item-desc__title {
+  @include alegreya(bold);
+  font-size: 27px;
+  margin-bottom: 0.7rem;
+}
+
+.why__item-desc__text {
+  @include alegreya(light);
+  font-size: 0.9rem;
+  line-height: 1.3em;
+  max-width: 14.5rem;
 }
 
 @each $why__item-ico in (useful, delicious, nutritious) {
@@ -44,6 +65,7 @@
     width: 125px;
     height: 125px;
     border-radius: 50%;
+    margin-bottom: 1.3rem;
 
     &::after {
       content: "";
@@ -63,7 +85,7 @@
 
 .why-raspberries-pic {
   position: absolute;
-  transform: translate(0%, 130%);
+  transform: translate(0%, 105%);
   z-index: -100;
   left: 0;
 }
