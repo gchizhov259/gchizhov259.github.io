@@ -1,0 +1,85 @@
+.about {
+  background-image: url("../../img/content/about-section_map.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.google-map {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.about__container {
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  top: 100vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 93px;
+  padding-top: 27px;
+  padding-bottom: 19px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+
+  .footer__col {
+    flex: 1;
+    letter-spacing: 0.3px;
+  }
+}
+
+.footer__address {
+  @include alegreya();
+  font-size: rem(20.5px);
+  line-height: rem(27px);
+}
+
+.footer__phone {
+  color: $green;
+  @include alegreya();
+  font-size: rem(21px);
+  position: relative;
+  padding-left: 17px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 16px;
+    left: 3px;
+    transform: translate(-10%, -50%);
+    background-image: url(../../img/icons/ico_phone_green.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.4rem;
+
+  &__item {
+    margin-left: 20px;
+
+    &:hover {
+      filter: invert(100%);
+      transition: 0.5s;
+    }
+  }
+}
+
+.socials__link-icon {
+  max-width: 20px;
+  max-height: 20px;
+}

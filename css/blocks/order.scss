@@ -1,0 +1,243 @@
+.order {
+  background: url("../../img/bg/order-section_bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 0;
+
+  .order__title {
+    color: $green;
+    margin-bottom: rem(55px);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/order-section_blackberry.png);
+    background-repeat: no-repeat;
+    background-position: top 5px right -16px;
+    transform: translate(0, -173px);
+    z-index: 1;
+  }
+}
+
+.order__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/order-section_leaf.png);
+    background-repeat: no-repeat;
+    background-position: bottom 17% right;
+    transform: translate(0, 0px);
+    z-index: -90;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../img/content/order-section_blueberry.png);
+    background-repeat: no-repeat;
+    background-position: bottom 13% left 2%;
+    transform: translate(0, 0px);
+    z-index: -90;
+  }
+}
+
+.order__form-button {
+  @extend .btn_order;
+  color: white;
+  background-color: $green;
+  border: none;
+  outline: none;
+
+  &_reset {
+    @include alegreya();
+    text-transform: none;
+    font-size: 18px;
+    background-color: transparent;
+    color: $green-triangle;
+    text-align: left;
+    padding-left: rem(25px);
+  }
+}
+
+.order__form-tag {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.order__form-col {
+  float: left;
+  width: 47%;
+  margin-left: 2.7%;
+
+  &_right {
+    margin-left: 2.1%;
+
+    .order__form-row {
+      margin-bottom: rem(13px);
+    }
+  }
+}
+
+.order__form-row {
+  margin-bottom: rem(18px);
+  display: flex;
+
+  &_radio {
+    margin-bottom: rem(4px);
+  }
+  &_checkbox {
+    margin-bottom: rem(40px);
+  }
+  &_buttons {
+    margin-bottom: rem(12px);
+  }
+}
+
+.order__form-label {
+  margin-bottom: rem(3px);
+  color: $green;
+  font-size: rem(18px);
+  line-height: rem(20px);
+}
+
+.order__form-input {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(18px);
+  padding: rem(10px);
+  padding: rem(5px) rem(10px);
+  border: rem(1px) solid transparent;
+  width: 100%;
+  height: rem(60px);
+
+  &_textarea {
+    height: rem(180px);
+    resize: none;
+  }
+
+  &:focus {
+    outline: #dde3bd rem(2px) solid;
+  }
+}
+
+.order__form-block {
+  display: block;
+  width: 100%;
+}
+
+.order__form-row_double {
+  margin-left: rem(-20px);
+  .order__form-block {
+    width: calc(100% / 2 - rem(20px));
+    margin-left: rem(20px);
+  }
+}
+
+.order__form-row_quatro {
+  margin-left: rem(-20px);
+  .order__form-block {
+    width: calc(100% / 4 - rem(20px));
+    margin-left: rem(20px);
+  }
+}
+
+.order__form-button {
+  @include phones {
+    .order__form-row {
+      justify-content: center;
+      margin-bottom: rem(17px);
+    }
+  }
+}
+
+.order__radio {
+  position: relative;
+  white-space: nowrap;
+  margin-right: rem(20px);
+  @include inlineblock(middle);
+  cursor: pointer;
+}
+
+.order__radio-elem {
+  position: absolute;
+  top: 0;
+  left: rem(-9999px);
+}
+
+.order__radio-fake {
+  width: rem(25px);
+  height: rem(25px);
+  border-radius: 50%;
+  background: #fff;
+  @include inlineblock(middle);
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(0px);
+    height: rem(0px);
+    border-radius: 50%;
+    background: $green;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+  }
+}
+
+.order__radio-elem:checked {
+  & + .order__radio-fake {
+    &:after {
+      width: rem(13px);
+      height: rem(13px);
+    }
+  }
+}
+
+.order__radio-title {
+  @include inlineblock(middle);
+  font-size: rem(18px);
+  line-height: rem(30px);
+  color: $green;
+  margin-left: rem(5px);
+}
+
+.order__radio_checkbox {
+  .order__radio-fake {
+    border-radius: rem(0px);
+  }
+  .order__radio-elem {
+    & + .order__radio-fake {
+      &:after {
+        background: transparent;
+      }
+    }
+  }
+  .order__radio-elem:checked {
+    & + .order__radio-fake {
+      &:after {
+        background: url("../../img/icons/check.png") 50% no-repeat transparent;
+        background-size: contain;
+        width: rem(15px);
+        height: rem(10px);
+      }
+    }
+  }
+}
